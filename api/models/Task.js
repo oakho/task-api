@@ -9,7 +9,7 @@ module.exports = {
   attributes: {
     label : {
       type: 'string',
-      defaultsTo: ''
+      required: true
     },
     locker : {
       type: 'string',
