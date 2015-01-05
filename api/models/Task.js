@@ -19,6 +19,11 @@ module.exports = {
       type: 'boolean',
       defaultsTo: false
     }
+  },
+  autoUpdatedAt: false,
+  beforeUpdate:function(values, next) {
+    values.updatedAt = new Date();
+    next();
   }
 };
 
